@@ -1,0 +1,96 @@
+/* Importando a fonte */
+@font-face {
+    font-family: "montserrat";
+    src: url("fonts/Montserrat.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilizando o corpo da página */
+body {
+    background-color: #D4EFEA;
+    font-family: "montserrat";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilizando a barra de horario */
+.horario {
+    display: flex;
+    background-color: #FFE4EB;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vh;
+    width: 100;
+}
+
+/* Estilizando a data */
+.data {
+    font-weight: 800;
+    padding: 20px;
+    color: #DA2C59;
+}
+
+/* Estilizando a hora */
+.hora {
+    font-weight: 800;
+    padding: 20px;
+    color: #DA2C59;
+}
+
+/* Estilizando a faixa da logo */
+.logo {
+    display: flex;
+    background-color: whitesmoke;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando a logo */
+.logo>img {
+    height: 6rem;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    display: flex;
+    background-color: #FFE4EB;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+
+/* Estilizando a lista da barra de navegação */
+nav>ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+/* Estilizando os itens da barra de navegação */
+nav>ul>li>button {
+    font-family: "montserrat";
+    padding: 10px 20px; 
+    border: none;
+    background-color: #FFE4EB;
+    cursor: pointer;
+    color: #DA2C59;
+    font-size: 20px;
+    font-weight: 800;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+/* Estilizando quando o mouse passa pelo item */
+button:hover {
+    transform: scale(1.3);
+    transition: transform 0.2s;
+}
+
+/* Estilizando quando o mouse clica o item */
+button:active {
+    transform: scale(1);
+    transition: transform 0.2s;
+}
